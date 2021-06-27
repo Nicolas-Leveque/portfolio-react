@@ -23,13 +23,14 @@ const About = () => {
                     </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    <p>Après plusieurs années dans les secteurs industriel et logistique, ce qui m'a apporté de l'expérience professionnelle et la rigueur, je reviens vers ma première passion: l’informatique.Devenu développeur web, j'ai ajouter à mes compétences de maintenance, l'aspect programmation et création.</p>
+                    {/* <p>Après plusieurs années dans les secteurs industriel et logistique, ce qui m'a apporté de l'expérience professionnelle et la rigueur, je reviens vers ma première passion: l’informatique.Devenu développeur web, j'ai ajouter à mes compétences de maintenance, l'aspect programmation et création.</p> */}
+                    <img src={`${photoProfil}`} alt="mon meilleur profil" className="object-cover object-center rounded" />
                 </div>
                 
             </div>
-            <div className="my-auto mx-auto h-64 w-64">
+            {/* <div className="my-auto mx-auto h-64 w-64">
                 <img src={`${photoProfil}`} alt="mon meilleur profil" className="object-cover object-center rounded" />
-            </div>
+            </div> */}
         </section>
     );
 }
