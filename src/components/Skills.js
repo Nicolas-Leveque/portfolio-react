@@ -1,5 +1,5 @@
 import React from 'react'
-import { hardSkills, softSkills } from '../data/data'
+import { hardSkills } from '../data/data'
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid"
 
 const Skills = () => {
@@ -24,7 +24,7 @@ const Skills = () => {
                         </div>
                     ))}
                 </div>
-                <h3 className="flex justify-center font-bold text-white text-2xl">Soft Skills</h3>
+                {/* <h3 className="flex justify-center font-bold text-white text-2xl">Soft Skills</h3>
                 <div className="flex flex-wrap lg:w4/5 sm:mx-auto sm:mb-2-mx-2">
                     {softSkills.map((skill) => (
                         <div key={skill} className="p-2 sm:w-1/2 w-full">
@@ -36,7 +36,7 @@ const Skills = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </div>
         </section>
     );

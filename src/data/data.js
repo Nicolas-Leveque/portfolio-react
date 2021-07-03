@@ -3,7 +3,7 @@ export const ocProjects = [
         title: "mon cv en page web",
         subtitle: "HTML CSS",
         description: "Intégration d'une maquette et implémentation d'une interface responsive",
-        image: "",
+        image: "../data/screenshot-cv.png",
         linkRepo: "https://github.com/Nicolas-Leveque/cv",
         link: "https://nicolas-leveque.github.io/cv/"
     },
@@ -11,15 +11,15 @@ export const ocProjects = [
         title: "ohmyfood",
         subtitle: "HTML Sass",
         description: "Intégration d'une maquette et implémentation d'une interface responsive, animations CSS ",
-        image: "",
+        image: "./screnshot-ohmyfood.png",
         linkRepo: "https://github.com/Nicolas-Leveque/Ohmyfood",
         link: "https://nicolas-leveque.github.io/Ohmyfood/"
     },
     {
         title: "La chouette agence",
-        subtitle: "HTML CSS",
+        subtitle: "SEO accessibilité",
         description: "Exercice d'analyse et optimisation SEO, accessibilité et vitesse d'un site",
-        image: "",
+        image: "./screenshot-chouetteagence.png",
         linkRepo: "https://github.com/Nicolas-Leveque/lachouetteagence",
         link: "https://nicolas-leveque.github.io/lachouetteagence/"
     },
@@ -27,15 +27,15 @@ export const ocProjects = [
         title: "Orinoco",
         subtitle: "HTML CSS Javascript",
         description: "Création d'un site de e-commerce, gestion d'événements JavaScript, intéraction avec un service externe et validation des données",
-        image: "",
+        image: "./screenshot-orinoco.png",
         linkRepo: "https://github.com/Nicolas-Leveque/Orinoco",
         link: ""
     },
     {
         title: "So Pekocko",
         subtitle: "Nodejs Expressjs MongoDB",
-        description: "Construction d'une APO sécurisée, mise en oeuvredes opérations CRUD, respect du RGPD et des standards OWASP",
-        image: "",
+        description: "Construction d'une API sécurisée, mise en oeuvredes opérations CRUD, respect du RGPD et des standards OWASP",
+        image: "./screenshot-sopekocko.png",
         linkRepo: "https://github.com/Nicolas-Leveque/So_Pekocko",
         link: ""
     },
@@ -43,7 +43,7 @@ export const ocProjects = [
         title: "Groupomania",
         subtitle: "Nodejs, mySQL, Reactjs",
         description: "Création d'un réseau social d'entreprise, gérer un stockage de données SQL, authentifier un utilisateur et maintenir sa session",
-        image: "",
+        image: "./screenshot-groupomania.png",
         linkRepo: "https://github.com/Nicolas-Leveque/Groupomania-OpenClassrooms",
         link: ""
     },
@@ -67,6 +67,14 @@ export const otherProjects = [
         linkRepo: "https://github.com/Nicolas-Leveque/node-weather-website",
         link: "https://leveque-weather-app.herokuapp.com/"
     },
+    {
+        title: "Portfolio",
+        subtitle: "ReactJS",
+        description: "Un simple portfolio codé en React avec récupération de données",
+        image: "",
+        linkRepo: "https://github.com/Nicolas-Leveque/portfolio-react",
+        link: ""
+    }
 ]
 
 export const hardSkills = [
