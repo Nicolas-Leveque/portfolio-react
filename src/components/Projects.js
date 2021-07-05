@@ -13,18 +13,19 @@ const Projects = () => {
                         {ocProjects.map((projet) => (
                             <a
                                 href={projet.linkRepo}
-                                key={projet.image}
+                                key={projet.key}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="flex relative">
+                                className="flex relative w-full m-2 h-96">
                                     <img 
                                         src={projet.image} 
                                         alt="gallery"
                                         className="absolute inset-0 w-full h-full object-cover object-center"/>
-                                    <div className="relative px-8 py-10 z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                                    <div className="relative px-8 py-10 z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90">
                                         <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">{projet.subtitle}</h2>
                                         <h1 className="title-font text-lg font-medium text-white mb-3">{projet.title}</h1>
                                         <p className="leading-relaxed">{projet.description}</p>
+                                        {projet.link && <a href={projet.link}>Lien direct </a>}
                                     </div>
                             </a>
 
@@ -39,21 +40,20 @@ const Projects = () => {
                         {otherProjects.map((projet) => (
                             <a
                                 href={projet.linkRepo}
-                                key={projet.image}
+                                key={projet.key}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="flex relative">
+                                className="flex relative w-full m-2 h-96">
                                     <img 
                                         src={projet.image} 
                                         alt="gallery"
                                         className="absolute inset-0 w-full h-full object-cover object-center"/>
-                                    <div className="relative px-8 py-10 z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                                    <div className="relative px-8 py-10 z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90">
                                         <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">{projet.subtitle}</h2>
                                         <h1 className="title-font text-lg font-medium text-white mb-3">{projet.title}</h1>
                                         <p className="leading-relaxed">{projet.description}</p>
                                     </div>
                             </a>
-
                         ))}
                     </div>
                 </div>
