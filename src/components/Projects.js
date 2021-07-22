@@ -3,7 +3,7 @@ import { ocProjects, otherProjects } from "../data/data";
 
 const Projects = () => {
     return ( 
-        <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+        <section id="projects" className="text-gray-400 bg-gray-900 body-font max-w-screen-lg">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
                 <div className="flex flex-col w-full mb-20">
                     <CodeIcon className="mx-auto inline-block w-10 mb-4"/>
@@ -11,7 +11,7 @@ const Projects = () => {
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Voici les projets effectué durant la formation OpenClassrooms</p>
                     <div className="flex flex-wrap mt-8">
                         {ocProjects.map((projet) => (
-                            <a
+                            <article
                                 href={projet.linkRepo}
                                 key={projet.key}
                                 target="_blank"
@@ -25,10 +25,11 @@ const Projects = () => {
                                         <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">{projet.subtitle}</h2>
                                         <h1 className="title-font text-lg font-medium text-white mb-3">{projet.title}</h1>
                                         <p className="leading-relaxed">{projet.description}</p>
-                                        {projet.link && <a href={projet.link}>Lien direct </a>}
+                                        {projet.link && <a href={projet.link} target="_blank" rel="noreferrer">Lien direct </a>}
+                                        <br/>
+                                        {projet.linkRepo && <a href={projet.linkRepo}>Lien GitHub </a>}
                                     </div>
-                            </a>
-
+                            </article>
                         ))}
                     </div>
                 </div>
@@ -38,7 +39,7 @@ const Projects = () => {
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Voici les autres projets que j'ai mis en oeuvre sur mon temps libre</p>
                     <div className="flex flex-wrap mt-8">
                         {otherProjects.map((projet) => (
-                            <a
+                            <article
                                 href={projet.linkRepo}
                                 key={projet.key}
                                 target="_blank"
@@ -52,8 +53,11 @@ const Projects = () => {
                                         <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">{projet.subtitle}</h2>
                                         <h1 className="title-font text-lg font-medium text-white mb-3">{projet.title}</h1>
                                         <p className="leading-relaxed">{projet.description}</p>
+                                        {projet.link && <a href={projet.link} target="_blank" rel="noreferrer">Lien direct </a>}
+                                        <br/>
+                                        {projet.linkRepo && <a href={projet.linkRepo}>Lien GitHub </a>}
                                     </div>
-                            </a>
+                            </article>
                         ))}
                     </div>
                 </div>

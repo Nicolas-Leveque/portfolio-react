@@ -3,7 +3,7 @@ import photoProfil from '../data/nico.jpg'
 
 const About = () => {
     return (  
-        <section id="about">
+        <section id="about" className="max-w-screen-lg">
             <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
@@ -23,14 +23,10 @@ const About = () => {
                     </div>
                 </div>
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    {/* <p>Après plusieurs années dans les secteurs industriel et logistique, ce qui m'a apporté de l'expérience professionnelle et la rigueur, je reviens vers ma première passion: l’informatique.Devenu développeur web, j'ai ajouter à mes compétences de maintenance, l'aspect programmation et création.</p> */}
-                    <img src={`${photoProfil}`} alt="mon meilleur profil" className="object-cover object-center rounded" />
+                    <img src={`${photoProfil}`} alt="mon meilleur profil" className="object-cover object-center rounded-full" />
                 </div>
                 
             </div>
-            {/* <div className="my-auto mx-auto h-64 w-64">
-                <img src={`${photoProfil}`} alt="mon meilleur profil" className="object-cover object-center rounded" />
-            </div> */}
         </section>
     );
 }

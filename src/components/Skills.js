@@ -1,10 +1,10 @@
 import React from 'react'
-import { hardSkills } from '../data/data'
+import { hardSkills, softSkills } from '../data/data'
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid"
 
 const Skills = () => {
     return (  
-        <section id="skills">
+        <section id="skills" className="max-w-screen-lg">
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
                     <ChipIcon className="w-10 inline-block mb-4" />
@@ -24,7 +24,7 @@ const Skills = () => {
                         </div>
                     ))}
                 </div>
-                {/* <h3 className="flex justify-center font-bold text-white text-2xl">Soft Skills</h3>
+                <h3 className="flex justify-center font-bold text-white text-2xl">Soft Skills</h3>
                 <div className="flex flex-wrap lg:w4/5 sm:mx-auto sm:mb-2-mx-2">
                     {softSkills.map((skill) => (
                         <div key={skill} className="p-2 sm:w-1/2 w-full">
@@ -36,7 +36,7 @@ const Skills = () => {
                             </div>
                         </div>
                     ))}
-                </div> */}
+                </div>
             </div>
         </section>
     );

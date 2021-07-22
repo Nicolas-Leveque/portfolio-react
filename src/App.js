@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main className="text-gray-400 bg-gray-900 body-font flex flex-col justify-center items-center">
       <Navbar />
       <About />
       <Projects />
