@@ -2,7 +2,8 @@ import { CodeIcon } from "@heroicons/react/solid";
 import { ocProjects, otherProjects } from "../data/data";
 
 const Projects = () => {
-    return ( 
+    return (
+        
         <section id="projects" className="text-gray-400 bg-gray-900 body-font max-w-screen-lg">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
                 <div className="flex flex-col w-full mb-20">
@@ -17,6 +18,7 @@ const Projects = () => {
                                 target="_blank"
                                 rel="noreferrer"
                                 className="flex relative w-full m-2 h-96">
+                                    {console.log(projet)}
                                     <img 
                                         src={projet.image} 
                                         alt="gallery"
