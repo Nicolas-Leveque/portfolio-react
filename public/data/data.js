@@ -77,6 +77,15 @@ export const otherProjects = [
     },
     {
         key:"other3",
+        title: "Portfolio",
+        subtitle: "ReactJS",
+        description: "Un simple portfolio codé en React avec récupération de données",
+        image: "../data/screenshot-portfolio.png",
+        linkRepo: "https://github.com/Nicolas-Leveque/portfolio-react",
+        link: ""
+    },
+    {
+        key:"other4",
         title: "Calculatrice",
         subtitle: "ReactJS",
         description: "Une simple calculatrice en reactJS",

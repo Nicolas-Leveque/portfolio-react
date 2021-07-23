@@ -21,7 +21,7 @@ const Projects = () => {
                                     {console.log(projet)}
                                     <img 
                                         src={projet.image} 
-                                        alt="gallery"
+                                        alt={`gallery ${projet.key}`}
                                         className="absolute inset-0 w-full h-full object-cover object-center"/>
                                     <div className="relative px-8 py-10 z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90">
                                         <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">{projet.subtitle}</h2>
@@ -49,7 +49,7 @@ const Projects = () => {
                                 className="flex relative w-full m-2 h-96">
                                     <img 
                                         src={projet.image} 
-                                        alt="gallery"
+                                        alt={`gallery ${projet.key}`}
                                         className="absolute inset-0 w-full h-full object-cover object-center"/>
                                     <div className="relative px-8 py-10 z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-90">
                                         <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">{projet.subtitle}</h2>
