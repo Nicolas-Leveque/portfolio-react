@@ -39,7 +39,7 @@ export const ocProjects = [
         key: "OC5",
         title: "So Pekocko",
         subtitle: "Nodejs Expressjs MongoDB",
-        description: "Construction d'une API sécurisée, mise en oeuvredes opérations CRUD, respect du RGPD et des standards OWASP",
+        description: "Construction d'une API sécurisée, mise en oeuvre des opérations CRUD, respect du RGPD et des standards OWASP",
         image: "../data/screenshot-sopekocko.png",
         linkRepo: "https://github.com/Nicolas-Leveque/So_Pekocko",
         link: ""
