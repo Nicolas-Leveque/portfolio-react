@@ -1,5 +1,11 @@
 import React from 'react'
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+
+// import { ArrowRightIcon } from "@heroicons/react/solid";
 
 const Navbar = () => {
     return (  
@@ -12,9 +18,23 @@ const Navbar = () => {
                     <a href="#projects" className="mr-5 hover:text-white">Projets</a>
                     <a href="#skills" className="mr-5 hover:text-white">Skills</a>
                 </nav>
-                <a href="mailto:nicoleveque@outlook.com" className="inline-flex items-center bg-gray-800border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contact
+                {/* <a href="mailto:nicoleveque@outlook.com" className="inline-flex items-center bg-gray-800border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contact
                 <ArrowRightIcon className="w-4 h-4 ml-1" />
-                </a>
+                </a> */}
+                <div className="inline-flex items-center align-center py-1 px-3 text-base mt-4 md:mt-0">
+                
+                        <FontAwesomeIcon icon={faArrowRight} className="m-5" />
+                        <a href="https://www.linkedin.com/in/nicolas-l%C3%A9v%C3%AAque-0b07591a3/" target="_blank" rel="noreferrer" className="mr-5   hover:text-white" >
+                        <FontAwesomeIcon icon={faLinkedin} size="2x" className="m-5" />
+                        </a>
+                        <a href="https://github.com/Nicolas-Leveque" target="_blank" rel="noreferrer" className="mr-5  hover:text-white" >
+                        <FontAwesomeIcon icon={faGithub} size="2x" className="m-5" />
+                        </a>
+                        <a href="mailto:nicoleveque@outlook.com" target="_blank" rel="noreferrer" className="mr-5   hover:text-white" >
+                        <FontAwesomeIcon icon={faEnvelope} size="2x" className="m-5" />
+                        </a>
+                    
+                </div>
             </div>
         </header>
     );

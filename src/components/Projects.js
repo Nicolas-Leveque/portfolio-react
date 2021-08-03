@@ -16,13 +16,15 @@ const Projects = () => {
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">Projets OpenClassrooms</h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Voici les projets effectué durant la formation OpenClassrooms</p>
                     <div className="flex justify-center flex-wrap mt-8 w-full">
-                        {ocProjects.map((projet) => (
+                        {ocProjects.map((projet, index) => (
+                            
                             <article
                                 href={projet.linkRepo}
                                 key={projet.key}
                                 target="_blank"
                                 rel="noreferrer"
                                 data-aos="flip-right"
+                                data-aos-offset={index * 100}
                                 className="flex relative w-72 m-2 xs:w-full">
                                     <img 
                                         src={projet.image} 
@@ -45,13 +47,14 @@ const Projects = () => {
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">Autres Projets</h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Voici les autres projets que j'ai mis en oeuvre sur mon temps libre</p>
                     <div className="flex justify-center flex-wrap mt-8">
-                        {otherProjects.map((projet) => (
+                        {otherProjects.map((projet, index) => (
                             <article
                                 href={projet.linkRepo}
                                 key={projet.key}
                                 target="_blank"
                                 rel="noreferrer"
                                 data-aos="flip-right"
+                                data-aos-offset={index * 100}
                                 className="flex relative w-72 m-2 xs:w-full">
                                     <img 
                                         src={projet.image} 
