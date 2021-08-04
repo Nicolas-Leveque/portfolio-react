@@ -9,7 +9,7 @@ const Projects = () => {
         Aos.init({ duration: 2000 })
     }, [])
     return (
-        <section id="projects" className="text-gray-400 bg-gray-900 body-font max-w-screen-lg">
+        <section id="projects" className="text-gray-400 bg-gray-900 body-font max-w-screen-lg lg:mt-0 mt-64">
             <div className="container w-full py-10 text-center ">
                 <div className="flex flex-col w-full mb-20">
                     <CodeIcon className="mx-auto inline-block w-10 mb-4"/>
@@ -24,7 +24,7 @@ const Projects = () => {
                                 target="_blank"
                                 rel="noreferrer"
                                 data-aos="flip-right"
-                                data-aos-offset={index * 100}
+                                data-aos-offset={index * 50}
                                 className="flex relative w-72 m-2 xs:w-full">
                                     <img 
                                         src={projet.image} 

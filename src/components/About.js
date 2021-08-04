@@ -10,12 +10,12 @@ const About = () => {
     }, [])
     return (  
         <section id="about" className="max-w-screen-lg">
-            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
+            <div className="container mx-auto flex px-10 pb-20 md:flex-row flex-col items-center">
                 <div data-aos="fade-up" className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
                         Bonjour, <br />
-                        je m'appelle Nicolas.
-                        <br className="hidden lg:inline-block" />
+                        je m'appelle Nicolas
+                        <br  />
                         Je suis développeur web
                     </h1>
                     <p className="mb-8 leading-relaxed">
@@ -28,7 +28,7 @@ const About = () => {
                         <a href="#projects" className="transition duration-500 ease-in-out ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"> Projets</a>
                     </div>
                 </div>
-                <div data-aos="fade-up"  className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <div data-aos="fade-up"  className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 pb-20 ">
                     <img src={`${photoProfil}`} alt="mon meilleur profil" className="object-cover object-center rounded-full" />
                 </div>
                 
